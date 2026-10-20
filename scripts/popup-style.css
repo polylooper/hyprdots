@@ -1,0 +1,54 @@
+@import url("/home/stefan/.config/gtk-3.0/colors.css");
+
+/* --- WINDOW --- */
+window {
+    background-color: @window_bg_color;
+    color: @window_fg_color;
+    padding: 20px;
+    border-radius: 18px;
+}
+
+/* --- LABELS --- */
+label {
+    font-family: "SF Pro Display", "Cantarell", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: @window_fg_color;
+    margin: 10px 10px;
+}
+
+label.title {
+    font-weight: 600;
+}
+
+label.countdown {
+    font-family: "SF Pro Text";
+    margin: 0px 0px 15px;
+    font-size: 1.1rem;
+}
+
+/* --- BUTTONS (Neutral) --- */
+button {
+    font-family: inherit;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #2a2d34; /* slightly lighter than window */
+    color: @popover_fg_color;
+    transition: background 150ms ease;
+    min-width: 200px;
+}
+
+button:hover {
+    background-color: #3a3f4a; /* subtle hover effect */
+}
+
+/* --- SHUTDOWN BUTTON (Red for destructive action) --- */
+button.shutdown {
+    background-color: #d9534f;  /* classic red */
+    color: #ffffff;
+}
+
+button.shutdown:hover {
+    background-color: #c64541;  /* slightly darker red on hover */
+}
